@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Typing Speed Test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Typing Speed Test</h1>
+
+    <!-- GIF Box -->
+    <div id="gif-box" class="gif-container">
+      <img id="status-gif" src="https://media.giphy.com/media/xUPGcgtKxm3G8uVZYA/giphy.gif" alt="Typing GIF" />
+    </div>
+
+    <!-- Timer -->
+    <div id="timer">Time Left: 60s</div>
+
+    <!-- Paragraph -->
+    <div id="paragraph" class="paragraph-box"></div>
+
+    <!-- Input Box -->
+    <textarea id="input" placeholder="Start typing here..." disabled></textarea>
+
+    <!-- Stats -->
+    <div class="stats">
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>Mistakes: <span id="mistakes">0</span></p>
+    </div>
+
+    <!-- Start Button -->
+    <button id="start-btn">Start Test</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
